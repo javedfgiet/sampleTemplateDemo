@@ -67,13 +67,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="PartnerIntakeForm.aspx" />
+    <Content Include="style.css" />
+    <Content Include="testtEmp.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PartnerIntakeForm.aspx.cs">
+      <DependentUpon>PartnerIntakeForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PartnerIntakeForm.aspx.designer.cs">
+      <DependentUpon>PartnerIntakeForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PISite.Master.cs">
+      <DependentUpon>PISite.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PISite.Master.designer.cs">
+      <DependentUpon>PISite.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="PISite.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
